@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E8E8E8;
+    font-family: "Roboto", sans-serif;
+
+}
+
+h1 {
+    font-size: 16px;
+    margin: 5px;
+}
+
+h4 {
+    font-size: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+header {
+    padding: 50px 20px 20px 20px;
+    /* Top, højre, bund, venstre */
+}
+
+h2 {
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    float: right;
+}
+
+.back-button img {
+    cursor: pointer;
+    float: left;
+}
+
+.content-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-navn {
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.second-image {
+    background-color: #366B92;
+}
+
+.first-image {
+    border: 5px solid #366B92;
+}
+
+.navbar {
+    background-color: #D9D9D9;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.navbar li {
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li.active {
+    border: 1px solid #ED8B1B;
+    /* Tilføj en gul ramme til det aktive li-element */
+}
+
+.navbar a img {
+    margin-left: 10px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.content {
+    padding: 20px;
+    display: none;
+    /* Skjul indholdet som standard */
+}
+
+.content.active {
+    display: block;
+    /* Vis indholdet, når det er aktivt */
+}
+
+.content img {
+    width: 100%;
+}
+
+
+.footer {
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer img {
+    padding-top: 20px;
+}
+
+input[type=text],
+select {
+    padding: 15px 20px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.link-button {
+    width: 85%;
+    background-color: #ED8B1B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.edit,
+.team {
+    padding: 10px 15px;
+    width: 124px;
+}
+
+.edit {
+    background-color: #ED8B1B;
+    color: white;
+    border: none;
+}
+
+.team {
+    border-color: #ED8B1B;
+    border-radius: 1px;
+    color: #ED8B1B;
+}
+
+.side {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 50%;
+}
+
+.bar-5 {
+    width: 60%;
+    height: 10px;
+    background-color: #ED8B1B;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.container-søger,
+.container-aktiv,
+.container-ikke-aktiv,
+.container-team {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+.image-container {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.image-container img {
+    border-radius: 1px;
+}
+
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.stars {
+    margin: 5px;
+    text-align: center;
+}
+
+.stars img {
+    width: 15px;
+    height: 15px;
+
+
+}
+
+.description {
+    font-size: 12px;
+    color: #555;
+}
+
+.call-button {
+    flex: 0 0 auto;
+    margin-left: 10px;
+}
+
+.call-button a {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+.call-button a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+}
+
+.ikon {
+    border: 1px solid #366B92;
+    border-radius: 8px;
+    padding: 3px;
+    margin-bottom: auto;
+}
+
+.open-button {
+    cursor: pointer;
+    background-color: #366B92;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+
+
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+    width: 100%;
+}
+
+
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+
+}
+
+/* Input styles */
+form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+form img {
+    display: flex;
+    padding: 10px 15px;
+    cursor: pointer;
+
+
+}
+
+form .search-form {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

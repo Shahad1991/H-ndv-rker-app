@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>HUB håndværkere</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header">
+            <div class="back-button" onclick="goBack()">
+                <!-- Billede tilbageknap -->
+                <img src="images/back.svg" alt="Tilbage">
+            </div>
+            <div class="logo">
+                <!-- Billede logo -->
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="content-img">
+        <img class="first-image" src="images/HUB.png" alt="Første billede">
+    </div>
+
+    <div class="stars">
+        <!-- Tilføj så mange stjerner som nødvendigt -->
+        <img src="images/star.svg" alt="Star">
+        <img src="images/star.svg" alt="Star">
+        <img src="images/star.svg" alt="Star">
+        <img src="images/star.svg" alt="Star">
+        <img src="images/star.svg" alt="Star">
+    </div>
+
+
+    <div class="person-navn">
+        <h1>Anders Sørensen</h1>
+        <h4>Min team</h4>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showContent(1)">Elektrikker</a>
+            </li>
+            <li><a href="#" onclick="showContent(2)">Maler</a>
+            </li>
+            <li><a href="#" onclick="showContent(3)">Murer</a></li>
+            <li><a href="#" onclick="showContent(4)">VVS</a></li>
+            <li><a href="#" onclick="showContent(5)">Snedker</a>
+            </li>
+            <li><a href="#" onclick="showContent(6)">Tømrer</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2> Velkomen til din team</h2>
+
+    <div class="content" id="content1">
+        <!-- Indhold for knap 1 -->
+        <div class="container-team">
+            <div class="image-container">
+                <img src="images/rivew.png" alt="Profilbillede">
+            </div>
+            <div class="info-container">
+                <div class="name">Fredrik Nilsen</div>
+                <div class="call-button">
+                    <a href="tel:+123456789">
+                        <img src="images/call.svg" alt="Call Icon">Ring
+                    </a>
+                </div>
+                <div class="stars">
+                    <!-- Tilføj så mange stjerner som nødvendigt -->
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                </div>
+                <img src="images/referance.png" alt="Profilbillede">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content" id="content2">
+        <div class="container-team">
+            <div class="image-container">
+                <img src="images/rivew.png" alt="Profilbillede">
+            </div>
+            <div class="info-container">
+                <div class="name">Fredrik Nilsen</div>
+                <div class="call-button">
+                    <a href="tel:+123456789">
+                        <img src="images/call.svg" alt="Call Icon">Ring
+                    </a>
+                </div>
+                <div class="stars">
+                    <!-- Tilføj så mange stjerner som nødvendigt -->
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                </div>
+                <img src="images/referance.png" alt="Profilbillede">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content" id="content3">
+        <!-- Indhold for knap 3 -->
+        <div class="container-team">
+            <div class="image-container">
+                <img src="images/rivew.png" alt="Profilbillede">
+            </div>
+            <div class="info-container">
+                <div class="name">Fredrik Nilsen</div>
+                <div class="call-button">
+                    <a href="tel:+123456789">
+                        <img src="images/call.svg" alt="Call Icon">Ring
+                    </a>
+                </div>
+                <div class="stars">
+                    <!-- Tilføj så mange stjerner som nødvendigt -->
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                    <img src="images/star.svg" alt="Star">
+                </div>
+                <img src="images/referance.png" alt="Profilbillede">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="content" id="content4">
+        <!-- Indhold for knap 3 -->
+        <h2>Indhold for knap 4</h2>
+        <p>Dette er indholdet for knap 4.</p>
+    </div>
+
+    <div class="content" id="content5">
+        <!-- Indhold for knap 3 -->
+        <h2>Indhold for knap 5</h2>
+        <p>Dette er indholdet for knap 5.</p>
+    </div>
+
+    <div class="button">
+        <button class="edit">Redigere profil</button>
+        <button class="team">Opret team</button>
+    </div>
+
+    <footer class="footer">
+
+        <ul>
+            <li>
+                <a href="home.html"><img src="images/profile-light.svg" alt="Ikon 1"></a>
+            </li>
+
+            <button class="open-button" onclick="openForm()">
+                <img src="images/søg.svg" alt="Icon" class="button-icon">
+            </button>
+
+
+            <div class="form-popup" id="myForm">
+                <form action="find.html" id="myForm">
+                    <label for="work">Vælg kategori</label>
+                    <select id="work" name="work">
+                        <option value="Snedker">Snedker</option>
+                        <option value="Tømrer">Tømrer</option>
+                        <option value="VVS instalatør">VVS instalatør</option>
+                        <option value="Elektrikker">Elektrikker</option>
+                        <option value="Maler">Maler</option>
+                        <option value="Glarmester">Glarmester</option>
+                    </select>
+                    <a href="find.html" class="link-button">Søg</a>
+                </form>
+            </div>
+
+
+            <li>
+                <a href="minteam.html"><img src="images/group.svg" alt="Ikon 3"></a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
